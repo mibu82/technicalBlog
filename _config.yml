@@ -1,0 +1,36 @@
+# Site settings
+title: Technical Blog
+description: A blog covering technology trends, industry insights, and technical documentation
+author: mibu82
+url: "https://mibu82.github.io"
+baseurl: "/technicalBlog"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# Timezone
+timezone: Asia/Seoul
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /posts/:year/:month/:day/:title/
